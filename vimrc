@@ -61,7 +61,7 @@ filetype plugin indent on    " required
 "packadd! vimspector
 
 "open where left off
-au BufWinLeave ?* mkview
+au BufWinLeave * if &diff | diffoff | endif | mkview
 au BufWinEnter ?* silent loadview
 
 " run python script
