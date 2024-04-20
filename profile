@@ -31,7 +31,7 @@ fi
 
 # add bob neovim to path.
 if [ -d "$HOME/.local/share/bob/nvim-bin" ]; then
-  PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
+	PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 fi
 
 alias vim=nvim
@@ -51,4 +51,4 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 export DOCKER_BUILDKIT=1
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\$ '
+PS1='[$(date +%H:%M:%S)] ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\$ '
