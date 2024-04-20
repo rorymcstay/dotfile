@@ -30,7 +30,7 @@ if [ -d "$HOME/.cargo/bin" ]; then
 fi
 
 # add bob neovim to path.
-if [ -d "$HOME/.local/share/bob/nvim-bin" ] then
+if [ -d "$HOME/.local/share/bob/nvim-bin" ]; then
   PATH="$HOME/.local/share/bob/nvim-bin:$PATH"
 fi
 

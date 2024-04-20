@@ -24,15 +24,6 @@ sudo apt-get update \
         unzip \
     && sudo apt-get clean
 
-sudo git clone https://github.com/google/benchmark.git /usr/src/benchmark
-sudo mkdir /usr/src/benchmark/build \
-    && sudo cmake \
-        -DBENCHMARK_DOWNLOAD_DEPENDENCIES=on \
-        -DCMAKE_BUILD_TYPE=Release \
-        -S /usr/src/benchmark \
-        -B /usr/src/benchmark/build
-    && (cd /usr/src/benchmark/build && sudo make install -j3)
-
 sudo apt-get install --only-upgrade \
     bash \
     less
